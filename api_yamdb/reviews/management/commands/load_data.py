@@ -1,8 +1,8 @@
 from csv import DictReader
+
 from django.core.management import BaseCommand
 from reviews.models import Category, Comments, Genre, Review, Title
 from users.models import User
-
 
 FILE_PATH = {
     'users': 'static/data/users.csv',
