@@ -12,6 +12,7 @@ services:
     image: wotanson/api_yamdb:latest
     restart: always
     volumes:
+      - ../docs/redoc.html:/usr/share/nginx/html/api/docs/redoc.html
       - static_value:/app/static/
       - media_value:/app/media/
     depends_on:
