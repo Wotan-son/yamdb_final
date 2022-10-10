@@ -5,6 +5,11 @@ YaMDb - каталог фильмов, книг и музыкальных аль
 ### Описание проекта
 Проект YaMDb представляет из себя каталог художественных произведений различных категорий. Например, произведения могут  делиться на категории ```Книги```, ```Фильмы```, ```Музыка```. Список категорий может быть расширен новыми категориями через интерфейс администратора в Django. Сами произведения в каталоге не хранятся. К произведениям из каталога пользователи могут оставлять отзывы и выставлять оценки. К отзывам пользователи могут оставлять свои комментарии.
 
+### Проект доступен по следующим адресам:
+1) http://51.250.95.74/api/v1/
+2) http://51.250.95.74/admin
+3) http://51.250.95.74/redoc
+
 ### ENV - необходимые переменные
 DB_ENGINE=django.db.backends.postgresql
 DB_NAME=postgres
@@ -30,7 +35,7 @@ curl -SL https://github.com/docker/compose/releases/download/v2.11.2/docker-comp
 chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
 
 Скопировать файлы docker-compose.yml и nginx.conf из директории infra на сервер:
-scp docker-compose.yml <username>@<host>:/home/<username>/docker-compose.yml
+scp docker-compose.yaml <username>@<host>:/home/<username>/docker-compose.yaml
 scp -r nginx/ <username>@<host>:/home/<username>/
 
 Для работы с Workflow добавить в Secrets:
